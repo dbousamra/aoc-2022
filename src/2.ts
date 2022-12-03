@@ -56,7 +56,7 @@ const outcomeTablePart2 = {
   },
 };
 
-class Problem1 extends Base {
+class Problem2 extends Base {
   getStrategyGuide() {
     return _.chain(this.in)
       .split('\n')
@@ -95,4 +95,4 @@ class Problem1 extends Base {
   }
 }
 
-Problem1.run('2.txt');
+Problem2.run('2.txt');
