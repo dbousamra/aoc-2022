@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { Base } from './base';
 
-class Problem1 extends Base {
+export class Problem1 extends Base {
   getElfInventories(): number[] {
     return _.chain(this.in)
       .split('\n\n')
@@ -23,5 +23,3 @@ class Problem1 extends Base {
     console.log(_.sum(top3));
   }
 }
-
-Problem1.run('1.txt');

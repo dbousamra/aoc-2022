@@ -56,7 +56,7 @@ const outcomeTablePart2 = {
   },
 };
 
-class Problem2 extends Base {
+export class Problem2 extends Base {
   getStrategyGuide() {
     return _.chain(this.in)
       .split('\n')
@@ -94,5 +94,3 @@ class Problem2 extends Base {
     console.log(totalScores);
   }
 }
-
-Problem2.run('2.txt');

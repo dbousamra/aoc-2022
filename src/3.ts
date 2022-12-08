@@ -1,7 +1,7 @@
 import _, { split } from 'lodash';
 import { Base } from './base';
 
-class Problem3 extends Base {
+export class Problem3 extends Base {
   static getPriority(item: string): number {
     const basePriority = _.toLower(item).charCodeAt(0) - 96;
 
@@ -45,5 +45,3 @@ class Problem3 extends Base {
     console.log(_.sum(priorities));
   }
 }
-
-Problem3.run('3.txt');
