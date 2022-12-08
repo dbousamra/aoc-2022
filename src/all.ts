@@ -5,6 +5,7 @@ import { Problem4 } from './4';
 import { Problem5 } from './5';
 import { Problem6 } from './6';
 import { Problem7 } from './7';
+import { Problem8 } from './8';
 
 console.time('All');
 
@@ -16,6 +17,7 @@ Promise.all([
   Problem5.run('5.txt'),
   Problem6.run('6.txt'),
   Problem7.run('7.txt'),
+  Problem8.run('8.txt'),
 ]).then(() => {
   console.timeEnd('All');
 });
